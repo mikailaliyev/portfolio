@@ -6,12 +6,9 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     height: fit-content;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 /*HEADER*/
@@ -29,6 +26,7 @@ header {
     text-align: center;
 }
 
+/*NAVIGATION LINKS*/
 .nav {
     width: 60%;
     display: flex;
@@ -48,31 +46,90 @@ header {
 
 .nav-links:hover {
     box-shadow:  0 0 8px #033a3d;
-    /* border-radius: 8px; */
 }
 
-.nav-button > a {
-    text-decoration: none;
-    color: #00ADB5;
-    font-weight: bolder;
-    font-size: large;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
 /*MAIN CONTENT*/
-main {
-    height: fit-content;
-    width: 100%;
-    padding: 2vh;   
+.main {
+    height: 100vh;
+    width: 100%;   
     background: white;
-    font-size: 120%;
-    color: #03858b;
+    color: #03858b;    
+    font-size: 1.5em;
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+.content > a {
+    width: 50%;
+
+}
+
+.content > p {
+    width: 50%;
+    margin: auto;
+    font-size: 3rem;
+}
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.main-nav {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.main-nav-links {
+    text-decoration: none;
+    margin: 5% auto;    
+    border-radius: 8px;
+    background: #058086;
+    padding: 2%;
+    width: 20%;
+    color: white;
+}
+
+.main-nav-links:hover {
+    box-shadow:  0 0 8px #033a3d;
+}
+
+
+/*VIDEO*/
+#myVideo {
+    border-radius: 8px;
+    transition: 1s;
+    border: 2px solid #058086;
+}
+
+#myVideo:hover {
+    transform: scale(1.2) translateX(-20%) translateY(10%);
+}
+#myVideo2 {
+    border-radius: 8px;
+    transition: 1s;
+    border: 2px solid #058086;
+}
+
+#myVideo2:hover {
+    transform: scale(1.2) translateX(-20%) translateY(10%);
 }
 
 /*FOOTER*/
 footer {
     width: 100%;
-    margin-top: 2vh;
     padding: 2vh;
     background: #393E46;
     color: white;
