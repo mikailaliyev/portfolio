@@ -1,29 +1,60 @@
-let myVideo = document.getElementById('myVideo')
+//PLAY VIDEO ON HOVER
+const mouseOver = (e) => {
+  setTimeout(() => {
+    e.play();
+  }, 1600);
+};
+const mouseOut = (e) => {
+  e.pause();
+};
 
+//AUTOPLAY IN VIEWPORT ON MOBILES
+if (window.innerWidth <= 480) {
+  let playState = null;
 
-myVideo.addEventListener('mouseover', () => {    
-    myVideo.className = 'myVideo'
-    setTimeout(()=>{
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        myVideo.pause();
+        playState = false;
+      } else {
         myVideo.play();
-    },1600)
-});
-myVideo.addEventListener('mouseout', () => {
-    myVideo.pause();
-});
+        playState = true;
+      }
+    });
+  }, {});
 
-let myVideo2 = document.getElementById('myVideo2')
+  observer.observe(myVideo);
 
+  const onVisibilityChange = () => {
+    if (document.hidden || !playState) {
+      myVideo2.pause();
+    } else {
+      myVideo2.play();
+    }
+    document.addEventListener("visibilitychange", onVisibilityChange);
+  };
 
-myVideo2.addEventListener('mouseover', () => {    
-    myVideo2.className = 'myVideo'
-    setTimeout(()=>{
+  const observer2 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        myVideo2.pause();
+        playState = false;
+      } else {
         myVideo2.play();
-    },1600)
-});
-myVideo2.addEventListener('mouseout', () => {
-    myVideo2.pause();
-});
+        playState = true;
+      }
+    });
+  }, {});
 
+  observer2.observe(myVideo2);
 
-
-
+  const onVisibilityChange2 = () => {
+    if (document.hidden || !playState) {
+      myVideo2.pause();
+    } else {
+      myVideo2.play();
+    }
+  };
+  document.addEventListener("visibilitychange", onVisibilityChange2);
+}
