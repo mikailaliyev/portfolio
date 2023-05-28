@@ -5,7 +5,6 @@ function About() {
     <>
       <title>About</title>
       <h1>About me</h1>
-      <Link href={"/"} >Back home</Link>
     </>
   );
 }

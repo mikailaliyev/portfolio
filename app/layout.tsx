@@ -1,7 +1,8 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Lato } from "next/font/google";
+import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
+const monseratt = Lato({ weight: ["400", "700"], subsets: ["latin"] });
 
 export const metadata = {
   title: "Blog",
@@ -15,7 +16,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={monseratt.className}>
+        <nav>
+          <Link href={"/"}>Home</Link>
+          <Link href={"/about"}>About</Link>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }
