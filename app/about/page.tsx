@@ -1,14 +1,8 @@
-async function About() {
-  const data = await fetch(
-    "https://test-fastapi-app.vercel.app/88"
-  );
-  const pageName= await data.json();
-  console.log(pageName);
+function About() {
   return (
     <>
-      <title>About</title>
-      <h1>About me</h1>
-      <h2>{pageName}</h2>
+      <title>About Me</title>
+      <h1 className="text-3xl font-bold text-center text-white">It is me</h1>
     </>
   );
 }
