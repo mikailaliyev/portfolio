@@ -16,6 +16,7 @@ export default function RootLayout({
       <body className="bg-[#04211d]">
         <nav className="text-center text-2xl text-white space-x-8 border-b-white border-b-2 shadow-white py-2 mb-8 shadow-md">
           <Link href={"/"}>Home</Link>
+          <Link href={"/blog"}>Blog</Link>
           <Link href={"/projects"}>Projects</Link>
           <Link href={"/about"}>About</Link>
         </nav>
