@@ -1,1 +1,5 @@
-* second post
+---
+
+---
+
+* Second Post
