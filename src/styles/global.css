@@ -1,7 +1,7 @@
 h1 {
     text-align: center;
     margin: 2rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .card {
@@ -12,7 +12,6 @@ h1 {
 
 @media screen and (min-width: 636px) {
     .nav-links {
-      margin-left: 5em;
       display: block;
       position: static;
       width: auto;
@@ -28,13 +27,28 @@ h1 {
   
 ul {
   display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-  max-width: 80%;
+  /* max-width: 100%; */
   border: 1px solid gray;
   border-radius: 5px;
   padding: 1rem;
+  /* max-width: 12%; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: purple;
 }
