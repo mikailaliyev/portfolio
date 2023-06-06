@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+    margin: 2rem;
+    font-size: 3rem;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (min-width: 636px) {
+    .nav-links {
+      margin-left: 5em;
+      display: block;
+      position: static;
+      width: auto;
+      background: none;
+    }
+  
+    .nav-links a {
+      display: inline-block;
+      padding: 15px 20px;
+    }
+  
+  }
+  
