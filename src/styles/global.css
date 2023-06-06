@@ -26,3 +26,15 @@ h1 {
   
   }
   
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+li {
+  max-width: 80%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1rem;
+}
