@@ -1,17 +1,17 @@
 ---
+import ThemeIcon from "./ThemeIcon.astro";
 ---
 
 <div>
-  <a href="/">Home</a>
-  <a href="/about">About</a>
-  <a href="/blog">Blog</a>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/blog">Blog</a>
+    <a href="/about">About</a>
+  </div>
+  <ThemeIcon />
 </div>
 
 <style>
-  a {
-    font-size: 1.2rem;
-  }
-
   div {
     display: flex;
     justify-content: center;

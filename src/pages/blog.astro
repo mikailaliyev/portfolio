@@ -7,7 +7,7 @@ const pageTitle = "My Astro Learning Blog";
 <Layout title={pageTitle}>
   <h1>Blog posts archive</h1>
   <ul style={{listStyleType: 'none'}}>
-    {allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}<br/>
+    {allPosts.reverse().map((post) => <li><a href={post.url}>{post.frontmatter.title}<br/>
       <p>{post.frontmatter.pubDate?.slice(0, 10)}</p>
       <p>{post.frontmatter.description}</p></a></li>)}
   </ul>

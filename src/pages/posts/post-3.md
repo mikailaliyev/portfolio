@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Layout.astro
 title: Third blog post
 author: Mikayil Aliyev
 description: "The third blog post!"

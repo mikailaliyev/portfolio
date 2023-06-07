@@ -1,8 +1,9 @@
 ---
+layout: ../../layouts/Layout.astro
 title: First blog post
 author: Mikayil Aliyev
 description: "The first blog post!"
-image: 
+image:
   url: "https://docs.astro.build/default-og-image.png"
   alt: "The word “astro” against an illustration of planets and stars."
 pubDate: 2023-06-06

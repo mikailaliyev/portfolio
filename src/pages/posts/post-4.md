@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Layout.astro
 title: Forth blog post
 author: Mikayil Aliyev
 description: "The third blog post!"
@@ -9,4 +10,4 @@ pubDate: 2023-06-06
 tags: ["inital", "AstroJS"]
 ---
 
-* Third Post
+* Fourth Post
