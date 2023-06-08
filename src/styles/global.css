@@ -60,15 +60,20 @@ a:hover {
   color: purple;
 }
 
-//ASIDE
+/*ASIDE*/
 .side {
-  padding: 5rem;
-  font-size: 1.5rem;
-  border: 1px solid green;
+  margin-top: 5rem;
+  font-size: 1.2rem;
+  border: 1px solid purple;
+  border-radius: 5px;
+  padding: 1rem;
 }
-
+.side p {
+  margin: 0;
+}
 aside {
   width: 100%;
+  color: red;
 }
 
 .single-post {
@@ -79,33 +84,7 @@ aside {
   font-size: 1rem;
   margin: 0.2rem 0;
 }
-@media screen and (min-width: 636px) {
-  .nav-links {
-    display: block;
-    position: static;
-    width: auto;
-    background: none;
-  }
 
-  .nav-links a {
-    display: inline-block;
-    padding: 1rem 20px;
-    font-size: 1.5rem;
-  }
-  /*Aside */
-  .side {
-    position: absolute;
-    top: 10rem;
-    right: 2rem;
-    padding: 0.2em 1rem;
-    font-size: 1.2rem;
-    border: 1px solid purple;
-    border-radius: 5px;
-  }
-  .side p {
-    margin: 0;
-  }
-}
 /*Github Projects*/
 .projects {
   display: flex;
@@ -127,3 +106,31 @@ aside {
   margin: 0.2rem 0 0 0;
 }
 /*Github ProjectsEnd*/
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 1rem 20px;
+    font-size: 1.5rem;
+  }
+  /*Aside */
+  .side {
+    position: absolute;
+    top: 6rem;
+    right: 1rem;
+    padding: 0.2em 1rem;
+    font-size: 1.2rem;
+    border: 1px solid purple;
+    border-radius: 5px;
+  }
+  .side p {
+    margin: 0;
+  }
+}
