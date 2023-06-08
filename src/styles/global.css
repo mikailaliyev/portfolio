@@ -7,6 +7,10 @@ html.dark .side {
   border: 1px solid white;
 }
 
+html.dark .project {
+  border: 1px dashed white;
+}
+
 h1 {
   text-align: center;
   margin: 2rem;
@@ -76,15 +80,40 @@ aside {
     padding: 1rem 20px;
     font-size: 1.5rem;
   }
-
+  /*Aside */
   .side {
+    position: absolute;
+    top: 10rem;
+    right: 2rem;
     padding: 0.2em 1rem;
     font-size: 1.2rem;
-    float: right;
     border: 1px solid purple;
     border-radius: 5px;
   }
   .side p{
     margin: 0;
   }
+  /**/
+
+  /*Github Projects*/
+  .projects {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 5rem 2rem;
+  }
+
+  .project {
+    font-size: 1.5rem;
+    border: 1px dashed purple;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+
+  .project > p {
+    font-size: 1rem;
+    margin: 0.2rem 0 0 0;
+  }
+  /*Github ProjectsEnd*/
+
 }
