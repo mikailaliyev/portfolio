@@ -98,6 +98,7 @@ aside {
   /*Github Projects*/
   .projects {
     display: flex;
+    justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
     padding: 5rem 2rem;
