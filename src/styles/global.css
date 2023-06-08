@@ -11,6 +11,10 @@ html.dark .project {
   border: 1px dashed white;
 }
 
+html.dark li {
+  border: 1px dashed white;
+}
+
 h1 {
   text-align: center;
   margin: 2rem;
@@ -26,7 +30,7 @@ h1 {
 .nav-links a {
   display: inline-block;
   padding: 1rem 5px;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
 }
 
 /*Blog posts*/
@@ -42,7 +46,7 @@ ul {
 }
 
 li {
-  border: 1px solid gray;
+  border: 1px dashed purple;
   border-radius: 5px;
   padding: 1rem;
 }
@@ -90,31 +94,29 @@ aside {
     border: 1px solid purple;
     border-radius: 5px;
   }
-  .side p{
+  .side p {
     margin: 0;
   }
   /**/
-
-  /*Github Projects*/
-  .projects {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    padding: 5rem 2rem;
-  }
-
-  .project {
-    font-size: 1.5rem;
-    border: 1px dashed purple;
-    border-radius: 5px;
-    padding: 1rem;
-  }
-
-  .project > p {
-    font-size: 1rem;
-    margin: 0.2rem 0 0 0;
-  }
-  /*Github ProjectsEnd*/
-
 }
+/*Github Projects*/
+.projects {
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 5rem 2rem;
+}
+
+.project {
+  font-size: 1.5rem;
+  border: 1px dashed purple;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.project > p {
+  font-size: 1rem;
+  margin: 0.2rem 0 0 0;
+}
+/*Github ProjectsEnd*/

@@ -1,14 +1,16 @@
 ---
 import ThemeIcon from "./ThemeIcon.astro";
-const currentPath = Astro.url.pathname
+const currentPath = Astro.url.pathname;
 ---
 
 <div>
   <nav class="nav-links">
-    <a href="/" class={currentPath === "/" ? "active":""}>Home</a>
-    <a href="/projects" class={currentPath === "/projects" ? "active":""}>Projects</a>
-    <a href="/blog" class={currentPath === "/blog" ? "active":""}>Blog</a>
-    <a href="/about" class={currentPath === "/about" ? "active":""}>About</a>
+    <a href="/" class={currentPath === "/" ? "active" : ""}>Home</a>
+    <a href="/projects" class={currentPath === "/projects" ? "active" : ""}
+      >Projects</a
+    >
+    <a href="/blog" class={currentPath === "/blog" ? "active" : ""}>Blog</a>
+    <a href="/about" class={currentPath === "/about" ? "active" : ""}>About</a>
   </nav>
   <ThemeIcon />
 </div>
@@ -17,7 +19,6 @@ const currentPath = Astro.url.pathname
   div {
     display: flex;
     justify-content: center;
-    gap: 1rem;
   }
 
   html.dark .active {
@@ -28,6 +29,4 @@ const currentPath = Astro.url.pathname
     color: black;
     border-bottom: 1px solid purple;
   }
-
-
 </style>

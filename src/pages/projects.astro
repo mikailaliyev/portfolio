@@ -1,21 +1,36 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import '../styles/global.css'
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
 const pageTitle = "My Astro Learning Blog";
 ---
+
 <Layout title={pageTitle}>
-<div class="projects">
+  <div class="projects">
     <div class="project">
-        <a href="https://github.com/mikailaliyev/calculator">Calculator</a>
+      <a href="https://github.com/mikailaliyev/calculator">Calculator</a>
+      <p>Tech stack: HTML5&CSS3, Vanilla JS</p>
+    </div>
+    <div class="project">
+      <a href="https://github.com/mikailaliyev/palindrome-checker"
+        >Palindrome Checker</a
+      >
+      <p>Tech stack: HTML5&CSS3, Vanilla JS</p>
+    </div>
+    <div class="project">
+        <a href="https://github.com/mikailaliyev/string-master">String Master</a>
         <p>Tech stack: HTML5&CSS3, Vanilla JS</p>
     </div>
     <div class="project">
-        <a href="https://github.com/mikailaliyev/palindrome-checker">Palindrome Checker</a>
+        <a href="https://github.com/mikailaliyev/tictactoe">TicTacToe</a>
         <p>Tech stack: HTML5&CSS3, Vanilla JS</p>
     </div>
     <div class="project">
-        <a href="https://github.com/mikailaliyev/ip-detector">IP Detector</a>
-        <p>Tech stack: HTML5&CSS3, ReactJS, TypeScript</p>
+      <a href="https://github.com/mikailaliyev/ip-detector">IP Detector</a>
+      <p>Tech stack: HTML5&CSS3, ReactJS, TypeScript</p>
     </div>
-</div>
+    <div class="project">
+      <a href="https://github.com/mikailaliyev/text-changer">Text Changer</a>
+      <p>Tech stack: Python</p>
+    </div>
+  </div>
 </Layout>
