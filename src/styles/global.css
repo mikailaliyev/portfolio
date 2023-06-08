@@ -1,6 +1,10 @@
-html.dark *{
+html.dark * {
   background-color: #0d0950;
   color: #fff;
+}
+
+html.dark .side {
+  border: 1px solid white;
 }
 
 h1 {
@@ -14,10 +18,49 @@ h1 {
   justify-content: center;
 }
 
+/*Navigation links*/
 .nav-links a {
   display: inline-block;
   padding: 1rem 5px;
   font-size: 1.7rem;
+}
+
+/*Blog posts*/
+ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: purple;
+}
+
+//ASIDE
+.side {
+  padding: 5rem;
+  font-size: 1.5rem;
+  border: 1px solid green;
+}
+
+aside {
+  width: 100%;
 }
 
 @media screen and (min-width: 636px) {
@@ -33,32 +76,15 @@ h1 {
     padding: 1rem 20px;
     font-size: 1.5rem;
   }
-}
 
-ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  /* max-width: 100%; */
-  border: 1px solid gray;
-  border-radius: 5px;
-  padding: 1rem;
-  /* max-width: 12%; */
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  color: purple;
+  .side {
+    padding: 0.2em 1rem;
+    font-size: 1.2rem;
+    float: right;
+    border: 1px solid purple;
+    border-radius: 5px;
+  }
+  .side p{
+    margin: 0;
+  }
 }
