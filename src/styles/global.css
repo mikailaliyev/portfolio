@@ -133,4 +133,10 @@ aside {
   .side p {
     margin: 0;
   }
+
+  #profile-photo {
+    margin-top: 2rem;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
 }
