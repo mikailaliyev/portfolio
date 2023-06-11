@@ -10,6 +10,6 @@ pubDate: 2023-06-06
 tags: ["inital", "AstroJS"]
 ---
 
-# First Post
+# Starting my project
 
-![A starry night sky.](/assets/sunset.jpg)
+<p style="margin: 1rem; font-size: 1.2rem">I am starting this project as my personal website/portfolio to bring everything together in one single place. It is challenging to show your skills using GitHub because sometimes people just don't observe the rest of your projects, so I needed a website to group that information for convenience.</p>

@@ -26,7 +26,17 @@ const currentPath = Astro.url.pathname;
     border-bottom: 1px solid white;
   }
   .active {
-    color: black;
+    color: purple;
     border-bottom: 1px solid purple;
+		animation: link-animation 2.5s infinite alternate;
+  }
+
+  @keyframes link-animation {
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
   }
 </style>
