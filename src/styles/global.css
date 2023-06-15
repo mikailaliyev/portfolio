@@ -115,9 +115,7 @@ aside {
 /*Profile photos*/
 
 #profile-photo {
-  shape-outside: circle();
-  float: left;
-  margin: 2rem;
+  margin-top: 2rem;
   border: 2px solid purple;
   border-radius: 50%;
   width: 150px;

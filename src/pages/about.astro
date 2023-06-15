@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="About">
   <img id="profile-photo" src="/images/profile.jpg" alt="profile" />
-  <p style={{ fontSize: "1.2rem", paddingTop: "2.2rem" }}>
+  <p>
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab fugiat
     distinctio suscipit eum, qui placeat. Quidem, placeat reiciendis! Neque
     iste, atque expedita molestias voluptatum magnam, architecto nemo earum
@@ -60,3 +60,15 @@ import Layout from "../layouts/Layout.astro";
     Doloremque?
   </p>
 </Layout>
+
+<style>
+  p {
+    font-size: 1.2rem;
+    padding-top: 1.2rem;
+  }
+  img {
+    shape-outside: circle();
+    float: left;
+    margin: 2rem;
+  }
+</style>
