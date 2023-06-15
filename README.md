@@ -1,1 +1,1 @@
-Built with AstroJS and love💖
+Built with AstroJS and Love💖
