@@ -8,6 +8,11 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 <Layout title="Home">
   <main>
     <img id="profile-photo" src="/images/profile.jpg" alt="profile" />
+    <p id="intro">
+      My name is Mikayil and I am passionate about technology and programming.
+      <br />In my <a id="about_link" href="/projects">projects</a> I use HTML&CSS,
+      JavaScript, ReactJS, AstroJS, Python, Sqlite.
+    </p>
     <div class="side">
       <p style={{ fontSize: "1.5rem" }}>Latest in Blog:</p>
       <aside>
@@ -18,3 +23,17 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
     </div>
   </main>
 </Layout>
+<style>
+  #intro {
+    font-size: 1.3rem;
+    padding-top: 2.2rem;
+    line-height: 3rem;
+  }
+  #about_link {
+    color: rgb(119, 110, 241);
+  }
+
+  #about_link:hover {
+    color: purple;
+  }
+</style>

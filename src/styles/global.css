@@ -116,11 +116,14 @@ aside {
 
 #profile-photo {
   margin-top: 2rem;
+  margin-right: 2rem;
   border: 2px solid purple;
   border-radius: 50%;
   width: 150px;
   height: 150px;
   object-fit: cover;
+  shape-outside: circle();
+  float: left;
 }
 
 @media screen and (min-width: 636px) {
@@ -153,7 +156,6 @@ aside {
   #profile-photo {
     margin-left: 2rem;
     margin-top: 2rem;
-
     border-radius: 50%;
     width: 300px;
     height: 300px;
