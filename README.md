@@ -1,1 +1,2 @@
-Built with AstroJS and Love💖
+# A portfolio project 
+## Built with AstroJS and Love💖
